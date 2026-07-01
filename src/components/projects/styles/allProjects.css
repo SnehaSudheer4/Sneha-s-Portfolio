@@ -1,0 +1,26 @@
+/* allProjects grid wrapper — handled by page-level CSS */
+.all-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 2px solid var(--ink);
+  border-left: 1px solid var(--border);
+  width: 100%;
+}
+
+.all-projects-project {
+  display: flex;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .all-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .all-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,107 @@
+/* ─── About: Editorial Article ───────────────── */
+
+.about-masthead {
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-rule-thick {
+  height: 3px;
+  background: var(--ink);
+  margin-bottom: 3px;
+}
+
+.about-rule-thin {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.about-article-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: var(--spacing-md);
+  max-width: 700px;
+}
+
+/* Two-column grid */
+.about-body-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--spacing-lg);
+  border-top: 1px solid var(--border);
+  padding-top: var(--spacing-md);
+}
+
+/* Portrait column */
+.about-col-portrait {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.about-portrait-frame {
+  border: 1px solid var(--border-dark);
+  padding: 0.5rem;
+  background: var(--paper-dark);
+}
+
+.about-portrait-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--paper-dark);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.about-portrait-initials {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--border-dark);
+}
+
+.about-portrait-caption {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  text-align: center;
+  line-height: 1.5;
+  padding: 0.25rem 0;
+}
+
+/* Text column */
+.about-col-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.about-paragraph {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--ink-light);
+}
+
+.about-byline {
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .about-body-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .about-portrait-placeholder {
+    aspect-ratio: 1 / 1;
+  }
+}

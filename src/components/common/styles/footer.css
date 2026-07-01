@@ -1,0 +1,35 @@
+/* ─── Editorial Footer ───────────────────────── */
+
+.editorial-footer {
+  padding: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.footer-rule-thick {
+  height: 3px;
+  background: var(--ink);
+  margin-bottom: 3px;
+}
+
+.footer-rule-thin {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-body {
+  padding: var(--spacing-sm) 0;
+}
+
+.footer-text {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-text strong {
+  color: var(--ink);
+  font-weight: 600;
+}

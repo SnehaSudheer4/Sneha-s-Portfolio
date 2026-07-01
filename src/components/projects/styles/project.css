@@ -1,0 +1,100 @@
+/* ─── Project Card: Newspaper Story ──────────── */
+
+.np-project-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.np-project-link {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+}
+
+.np-project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.75rem;
+  width: 100%;
+  background: transparent;
+  transition: background 0.25s ease;
+}
+
+.np-project-card:hover {
+  background: var(--paper-dark);
+}
+
+.np-project-tag {
+  font-size: 0.62rem;
+}
+
+.np-project-headline {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  transition: color 0.2s ease;
+}
+
+.np-project-card:hover .np-project-headline {
+  color: var(--gold);
+}
+
+.np-project-rule {
+  height: 1px;
+  background: var(--border);
+  margin: 0.35rem 0;
+}
+
+.np-project-summary {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+  flex-grow: 1;
+}
+
+/* Footer: logo + link */
+.np-project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.np-project-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.np-project-logo-wrap img {
+  height: 20px;
+  max-width: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.4;
+  transition: all 0.2s ease;
+}
+
+.np-project-card:hover .np-project-logo-wrap img {
+  filter: grayscale(0%);
+  opacity: 0.8;
+}
+
+.np-read-more {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: color 0.2s ease;
+}
+
+.np-project-card:hover .np-read-more {
+  color: var(--gold-hover);
+}

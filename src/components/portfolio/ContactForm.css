@@ -1,0 +1,170 @@
+/* ─── Contact: Classifieds ───────────────────── */
+
+.contact-masthead {
+  margin-bottom: var(--spacing-sm);
+}
+
+.contact-rule-thick {
+  height: 3px;
+  background: var(--ink);
+  margin-bottom: 3px;
+}
+
+.contact-rule-thin {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.contact-section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+/* Classifieds column */
+.contact-classifieds {
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 0;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-intro {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-light);
+}
+
+.contact-rule-mid {
+  height: 1px;
+  background: var(--border);
+}
+
+.classified-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.classified-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.classified-item:last-child {
+  border-bottom: none;
+}
+
+.classified-label {
+  font-size: 0.65rem;
+  color: var(--ink-faint);
+}
+
+.classified-value {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--ink);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.classified-value:hover {
+  color: var(--gold);
+}
+
+/* Form column */
+.contact-form {
+  padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-form-label {
+  margin-bottom: 0;
+}
+
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cf-field label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+}
+
+.cf-field input,
+.cf-field textarea {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-dark);
+  padding: 0.5rem 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+  resize: none;
+}
+
+.cf-field input:focus,
+.cf-field textarea:focus {
+  border-bottom-color: var(--gold);
+}
+
+.contact-submit-btn {
+  align-self: flex-start;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-top: var(--spacing-sm);
+}
+
+.contact-submit-btn:hover {
+  background: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .contact-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-classifieds {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-right: 0;
+  }
+
+  .contact-form {
+    padding-left: 0;
+    padding-top: var(--spacing-md);
+  }
+}

@@ -1,0 +1,190 @@
+/* ─── Hero: Newspaper Front Page ─────────────── */
+
+.hero-section {
+  padding-top: 180px; /* account for tall masthead */
+  padding-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Header meta row */
+.hero-header {
+  margin-bottom: 0;
+}
+
+.hero-header-rule-thick {
+  height: 3px;
+  background: var(--ink);
+  margin-bottom: 3px;
+}
+
+.hero-header-rule-thin {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 0.3rem;
+}
+
+.hero-header-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.hero-meta-center {
+  text-align: center;
+  flex: 1;
+}
+
+/* Main headline */
+.hero-headline-block {
+  text-align: center;
+  padding: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.hero-main-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(5rem, 14vw, 12rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero-rule {
+  height: 1px;
+  background: var(--border-dark);
+  margin-top: var(--spacing-sm);
+}
+
+/* Two-column body */
+.hero-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--border);
+  margin-top: var(--spacing-sm);
+}
+
+.hero-col-left {
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 0;
+  border-right: 1px solid var(--border);
+}
+
+.hero-col-right {
+  padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+}
+
+/* Role line */
+.hero-role-line {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-divider {
+  height: 1px;
+  background: var(--border-dark);
+  transform-origin: left;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Introduction paragraph */
+.hero-intro {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-light);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Article footer links */
+.hero-footer-line {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border);
+}
+
+.hero-footer-sep {
+  color: var(--border-dark);
+  font-size: 1rem;
+}
+
+/* Sidebar */
+.hero-sidebar {
+  height: 100%;
+}
+
+.hero-sidebar-label {
+  margin-bottom: 0.5rem;
+}
+
+.hero-sidebar-rule {
+  height: 2px;
+  background: var(--ink);
+  margin-bottom: var(--spacing-sm);
+}
+
+.hero-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hero-sidebar-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+
+.hero-sidebar-list li span {
+  color: var(--ink-faint);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-sidebar-list li strong {
+  color: var(--ink);
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 140px;
+  }
+
+  .hero-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-col-left {
+    padding: var(--spacing-md) 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-col-right {
+    padding: var(--spacing-md) 0 0;
+  }
+
+  .hero-main-headline {
+    font-size: clamp(4rem, 18vw, 8rem);
+  }
+}

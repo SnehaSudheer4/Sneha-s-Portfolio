@@ -1,0 +1,118 @@
+/* ─── Timeline: Newspaper Chronicle ─────────── */
+
+.timeline-masthead {
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-rule-thick {
+  height: 3px;
+  background: var(--ink);
+  margin-bottom: 3px;
+}
+
+.timeline-rule-thin {
+  height: 1px;
+  background: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Article list */
+.timeline-articles {
+  border-top: 1px solid var(--border);
+}
+
+/* Each article entry */
+.timeline-article {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-article:hover {
+  background: var(--paper-dark);
+}
+
+/* Year column */
+.timeline-article-year {
+  padding: var(--spacing-md) var(--spacing-sm) var(--spacing-md) 0;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-year-label {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold);
+  writing-mode: horizontal-tb;
+  letter-spacing: 0.05em;
+}
+
+/* Article body */
+.timeline-article-body {
+  padding: var(--spacing-md) 0 var(--spacing-md) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeline-dateline {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.timeline-article-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.timeline-article-byline {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.timeline-article-rule {
+  height: 1px;
+  background: var(--border);
+  margin: 0.5rem 0;
+}
+
+.timeline-article-text {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--ink-light);
+}
+
+@media (max-width: 768px) {
+  .timeline-article {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-article-year {
+    padding: var(--spacing-sm) 0 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .timeline-article-body {
+    padding: var(--spacing-sm) 0;
+  }
+}
