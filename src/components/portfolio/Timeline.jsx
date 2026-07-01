@@ -3,9 +3,16 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    role: "Senior Full Stack Developer",
+    company: "Valayam",
+    period: "Feb 2026 – Present",
+    dateline: "Remote",
+    description: "Leading the development of scalable web and mobile applications. Architecting reusable codebases, designing REST APIs, and collaborating with cross-functional teams to deliver high-quality, fast, and user-focused digital solutions."
+  },
+  {
     role: "React Developer",
     company: "Datacube Global Software Solutions",
-    period: "Feb 2024 – Present",
+    period: "Feb 2024 – Feb 2026",
     dateline: "Kerala, India",
     description: "Developing scalable and responsive user interfaces using React.js. Integrating RESTful APIs, collaborating with backend developers, and contributing to daily code reviews in an agile environment."
   },
@@ -35,6 +42,8 @@ const Envelope = ({ exp, index }) => {
       onMouseLeave={() => setIsOpen(false)}
       onClick={() => setIsOpen(!isOpen)}
     >
+      {/* Invisible expanded hit area to prevent hover glitching */}
+      <div className="absolute top-[-160px] bottom-[-60px] left-[-20px] right-[-20px] bg-transparent z-0"></div>
       {/* Envelope Back */}
       <div className="absolute inset-0 bg-[#E8DDCF] shadow-md rounded-sm border border-[#D1BFA6] z-0 mt-8"></div>
       

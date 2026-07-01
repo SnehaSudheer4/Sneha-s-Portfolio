@@ -18,7 +18,7 @@ const INFO = {
 homepage: {
 	title: "Hi, Im Sneha Sudheer ",
 	description:
-		"A full-stack web developer with 1.6 years of experience specializing in React.js for building dynamic and responsive front-end applications. I also have working knowledge of backend technologies like Node.js and Express.js, which I use to create robust APIs and server-side logic. I have hands-on experience in developing and deploying live projects, with a strong focus on building scalable, secure, and user-centric web applications. I’m passionate about writing clean, maintainable code and continuously improving my skills to stay aligned with modern development practices.",
+		"A full-stack web developer with 2.3 years of experience specializing in React.js for building dynamic and responsive front-end applications. I also have working knowledge of backend technologies like Node.js and Express.js, which I use to create robust APIs and server-side logic. I have hands-on experience in developing and deploying live projects, with a strong focus on building scalable, secure, and user-centric web applications. I’m passionate about writing clean, maintainable code and continuously improving my skills to stay aligned with modern development practices.",
 }
 ,
 
@@ -81,6 +81,14 @@ logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
 
   linkText: "View Project",
   link: "https://github.com", // replace with your actual GitHub or live demo link
+},
+ {
+  title: "sHweet Partnership Program",
+  description:
+    "A comprehensive referral network system that includes integrated e-commerce features, product sharing capabilities, and advanced referral tracking.",
+logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", // Using React logo as placeholder
+  linkText: "View Project",
+  link: "https://github.com",
 }
 
 ],
