@@ -49,13 +49,13 @@ const Envelope = ({ exp, index }) => {
       
       {/* Letter */}
       <motion.div 
-        className="absolute left-4 right-4 bg-diary-white shadow-sm p-6 border border-diary-cream z-10 origin-bottom"
-        initial={{ y: 20, zIndex: 10 }}
-        animate={isOpen ? { y: -160, zIndex: 30, scale: 1.05 } : { y: 20, zIndex: 10, scale: 1 }}
+        className="absolute left-4 right-4 bg-diary-white shadow-sm p-6 border border-diary-cream z-10 origin-bottom overflow-y-auto scrollbar-hide"
+        initial={{ y: 12, zIndex: 10 }}
+        animate={isOpen ? { y: -180, zIndex: 30, scale: 1.05 } : { y: 12, zIndex: 10, scale: 1 }}
         transition={{ duration: 0.5, type: "spring", bounce: 0.3 }}
-        style={{ minHeight: '220px' }}
+        style={{ minHeight: '200px', maxHeight: '220px' }}
       >
-        <div className="border-b border-diary-beige pb-2 mb-3">
+        <div className="border-b border-diary-beige pb-2 mb-3 shrink-0">
           <p className="font-handwriting text-diary-sage text-xl absolute top-4 right-4">{exp.period}</p>
           <h3 className="font-handwriting text-3xl text-diary-brown leading-tight pr-20">{exp.role}</h3>
           <p className="font-body text-diary-brown/60 text-sm font-bold tracking-wide uppercase mt-1">{exp.company}</p>
@@ -99,7 +99,7 @@ const Envelope = ({ exp, index }) => {
       </div>
       
       {/* Base height for layout purposes */}
-      <div className="h-48 w-full mt-8"></div>
+      <div className="h-60 w-full mt-8"></div>
     </div>
   );
 };
